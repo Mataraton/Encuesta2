@@ -1,0 +1,70 @@
+
+h1 {
+    color: #00abfa;
+    display: grid;
+    place-items: center;
+    height: 10vh;
+    background-color: rgb(65, 66, 66);
+    border-radius: 50px;
+  }
+  
+  form {
+    margin-top: 20px;
+    background-color: rgba(15, 14, 14, 0.801);
+  }
+ 
+  
+   .p1, .p2, .p3 {
+    display: grid;
+    place-items: center;
+    height: 5vh;
+    color: rgba(250, 185, 6, 0.938);
+    border: 1px solid #01adf1;
+    border-radius: 30px;
+    background-image: url("/../../assets/images/gif3.gif");
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente el elemento <p> */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    
+    
+    
+    font-weight: bold;
+    
+  }
+
+  .imagen1 {
+    display: flex; /* Esto establece el contenedor como un flex container */
+    justify-content: center; /* Centra horizontalmente la imagen dentro del contenedor */
+    align-items: center; /* Centra verticalmente la imagen dentro del contenedor */
+    width: auto; /* Establece el ancho del contenedor */
+    height: auto; /* Establece la altura del contenedor */
+    border: 5px solid #000; /* Un borde para visualizar el contenedor */
+  }
+  
+  img {
+    max-width: 100%; /* La imagen se ajustará al ancho máximo del contenedor */
+    max-height: 100%; /* La imagen se ajustará a la altura máxima del contenedor */
+  }
+  
+ label {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(250, 185, 6, 0.938);
+  }
+  
+   button {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+   textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: static; /* Permite redimensionar verticalmente */
+    background-color: #b1aeae;
+  }
