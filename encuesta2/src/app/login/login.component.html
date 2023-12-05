@@ -1,30 +1,27 @@
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="login.component.scss">
-</head>
-<body>
-       
-    <form action="">
-
-        <h2>LOGIN</h2>
-        <label for="username">username</label>
-        <input type="text" id="username">
-
-        <label for="password">password</label>
-        <input type="password" id="password">
-
-        <div class="remember">
-        <p>Recordar</p>    
-        <p>Olvide contraseña</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>INICIAR SECCION</h1>
+                    <h6>Porfavor ingresa Email y contraseña</h6>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input formControlName="correo" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </form>
+                  <a style="color: #fff; margin: top 10px;" [routerLink]="['/register']" >Nuevo usuario. Da click para registrarte </a>
+            </div>
         </div>
+    </div>
 
-        <input type="submit" class="btn-1" value="Iniciar sesion"  >
-    </form>
-    
-    <script src="" async defer></script>
-</body>
+</div>

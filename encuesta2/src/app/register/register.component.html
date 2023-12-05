@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>REGISTRARSE</h1>
+                    <h6>Registra tus datos</h6>
+                </div>
+            <form>
+                <form [formGroup]="registerForm" (ngSubmit)="register()">
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Nombre completo</label>
+                        <input formControlName="nombre"type="text" class="form-control" id="exampleInputName">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputNumber" class="form-label">Numero de Celular</label>
+                        <input formControlName="celular" type="number" class="form-control" id="exampleInputNumber">
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Corre Electronico</label>
+                      <input formControlName="correo" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div  id="text" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                      <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary mb-2">Registrarse</button>
+                  </form>
+                  <a style="color: #fff; margin: top 10px;" [routerLink]="['/login']">Estas registrado. Haz click en Login </a>
+                  
+            </form>
+            </div>
+        </div>
+    </div>
+
+</div>

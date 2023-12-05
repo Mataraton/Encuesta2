@@ -1,0 +1,70 @@
+{
+  "Usuarios": [
+    {
+      "id": 1,
+      "nombre": "Nombre-Completo",
+      "celular": "Numero-Celular",
+      "correo": "Correo-Electronico",
+      "contraseña": "contraseña"
+    },
+    {
+      "nombre": "alex castaño",
+      "celular": 321654987,
+      "correo": "",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "nombre": "mateo perez",
+      "celular": 123654123,
+      "correo": "mateo@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "nombre": "manuela",
+      "celular": 31332,
+      "correo": "",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "fullname": "a",
+      "mobile": 1234,
+      "email": "a@a.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "nombre": "jose",
+      "apellido": "tito",
+      "correo": "casa@jota.com",
+      "celular": 321560
+    },
+    {
+      "id": 7,
+      "nombre": "asdasd",
+      "apellido": "adasda",
+      "correo": "adadad",
+      "celular": 23
+    },
+    {
+      "id": 8,
+      "nombre": "a",
+      "apellido": "a",
+      "correo": "a",
+      "celular": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
